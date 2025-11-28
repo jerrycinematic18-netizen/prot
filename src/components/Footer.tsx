@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Film, MessageCircle, Instagram, Mail, Phone } from 'lucide-react';
+import { MessageCircle, Instagram, Mail, Phone } from 'lucide-react';
 import { Page } from '../hooks/useRouter';
 
 interface FooterProps {
@@ -23,11 +23,15 @@ export default function Footer({ navigateTo }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
           <div>
             <motion.div
-              className="flex items-center gap-2 mb-4"
+              className="flex items-center gap-3 mb-4"
               whileHover={{ scale: 1.05 }}
             >
-              <Film className="w-8 h-8 text-[#007BFF]" />
-              <span className="text-xl font-bold text-[#C0C0C0] font-orbitron">
+              <img
+                src="/IMG_20251018_220710_343.webp"
+                alt="Jerry Cinematic Logo"
+                className="w-10 h-10"
+              />
+              <span className="text-lg font-bold text-[#C0C0C0] font-orbitron">
                 Jerry Cinematic
               </span>
             </motion.div>
