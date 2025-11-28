@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Film } from 'lucide-react';
 
 interface PreloaderProps {
   onComplete: () => void;
@@ -16,22 +15,25 @@ export default function Preloader({ onComplete }: PreloaderProps) {
     >
       <div className="text-center">
         <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 2, ease: "linear", repeat: Infinity }}
-          className="mx-auto mb-4"
+          animate={{
+            rotate: 360,
+            scale: [1, 1.1, 1],
+          }}
+          transition={{
+            rotate: { duration: 3, ease: "linear", repeat: Infinity },
+            scale: { duration: 2, repeat: Infinity }
+          }}
+          className="mx-auto mb-8"
         >
-          <Film className="w-20 h-20 text-[#007BFF]" strokeWidth={1.5} />
+          <img
+            src="/IMG_20251018_220710_343.webp"
+            alt="Jerry Cinematic Logo"
+            className="w-48 h-48 drop-shadow-2xl"
+          />
         </motion.div>
-        <motion.h1
-          className="text-4xl font-bold text-[#C0C0C0] font-orbitron"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-        >
-          Jerry Cinematic
-        </motion.h1>
+
         <motion.div
-          className="mt-4 h-1 w-64 bg-gray-800 rounded-full overflow-hidden"
+          className="mt-8 h-1 w-64 bg-gray-800 rounded-full overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}

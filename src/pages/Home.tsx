@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Film, Play } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { Page } from '../hooks/useRouter';
 
 interface HomeProps {
@@ -52,21 +52,28 @@ export default function Home({ navigateTo }: HomeProps) {
           transition={{ duration: 1, ease: 'easeOut' }}
           className="mb-8"
         >
-          <div className="relative mx-auto w-40 h-40 flex items-center justify-center">
+          <div className="relative mx-auto w-48 h-48 flex items-center justify-center">
             <motion.div
-              className="absolute inset-0 rounded-full bg-gradient-to-r from-[#007BFF] to-[#C0C0C0] opacity-20"
+              className="absolute inset-0 rounded-full bg-gradient-to-r from-[#007BFF] to-[#C0C0C0] opacity-30"
               animate={{
                 scale: [1, 1.2, 1],
-                rotate: 360,
               }}
-              transition={{ duration: 4, repeat: Infinity }}
+              transition={{ duration: 2, repeat: Infinity }}
             />
-            <Film className="w-24 h-24 text-[#007BFF] relative z-10" strokeWidth={1.5} />
+            <motion.img
+              src="/IMG_20251018_220710_343.webp"
+              alt="Jerry Cinematic Logo"
+              className="w-48 h-48 drop-shadow-2xl relative z-10"
+              animate={{
+                rotateY: [0, 360],
+              }}
+              transition={{ duration: 6, repeat: Infinity, ease: 'linear' }}
+            />
           </div>
         </motion.div>
 
         <motion.h1
-          className="text-6xl md:text-8xl font-bold mb-4 font-orbitron"
+          className="text-5xl md:text-7xl font-bold mb-4 font-orbitron"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
