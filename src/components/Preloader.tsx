@@ -16,7 +16,6 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       <div className="text-center">
         <motion.div
           animate={{
-            rotate: 360,
             scale: [1, 1.1, 1],
           }}
           transition={{
