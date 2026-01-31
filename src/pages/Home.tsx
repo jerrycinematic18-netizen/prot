@@ -28,11 +28,7 @@ export default function Home({ navigateTo }: HomeProps) {
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-[#007BFF] rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-          
+
           />
         ))}
       </div>
