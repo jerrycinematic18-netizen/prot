@@ -36,11 +36,7 @@ export default function Home({ navigateTo }: HomeProps) {
               opacity: [0, 1, 0],
               scale: [0, 1.5, 0],
             }}
-            transition={{
-              duration: 3 + Math.random() * 2,
-              repeat: Infinity,
-              delay: Math.random() * 5,
-            }}
+            
           />
         ))}
       </div>
