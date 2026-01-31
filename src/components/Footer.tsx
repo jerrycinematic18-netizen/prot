@@ -12,7 +12,6 @@ export default function Footer({ navigateTo }: FooterProps) {
   const quickLinks = [
     { label: 'Home', page: 'home' as Page },
     { label: 'About', page: 'about' as Page },
-    { label: 'Portfolio', page: 'portfolio' as Page },
     { label: 'Services', page: 'services' as Page },
     { label: 'Contact', page: 'contact' as Page },
   ];
