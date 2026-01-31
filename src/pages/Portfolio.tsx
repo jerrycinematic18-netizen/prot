@@ -44,9 +44,19 @@ export default function Portfolio() {
             </span>
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-[#007BFF] to-[#C0C0C0] mx-auto mb-8" />
-          <p className="text-[#C0C0C0] text-lg">
+          <p className="text-[#C0C0C0] text-lg mb-6">
             Explore my latest cinematic creations and visual stories
           </p>
+          <motion.a
+            href="https://new.express.adobe.com/webpage/hnxtw2E5Gu0Z4"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="inline-block px-8 py-3 bg-gradient-to-r from-[#007BFF] to-[#0056b3] text-white font-semibold rounded-full hover:shadow-lg hover:shadow-[#007BFF]/50 transition-all"
+          >
+            View Full Portfolio
+          </motion.a>
         </motion.div>
 
         <motion.div
