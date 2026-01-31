@@ -6,7 +6,7 @@ import { Project } from '../types';
 const projects: Project[] = [
   { id: '1', title: 'Brand Promotion Reel', category: 'short-form', thumbnail: 'https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=600' },
   { id: '2', title: 'Product Advertisement', category: 'ads', thumbnail: 'https://images.pexels.com/photos/7991259/pexels-photo-7991259.jpeg?auto=compress&cs=tinysrgb&w=600' },
-  { id: '3', title: 'Music Video Edit', category: 'music-videos', thumbnail: 'https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=600' },
+  { id: '3', title: 'Music Video Edit', category: 'Event-Coverage', thumbnail: 'https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=600' },
   { id: '4', title: 'Cinematic Wedding', category: 'cinematic', thumbnail: 'https://images.pexels.com/photos/2959192/pexels-photo-2959192.jpeg?auto=compress&cs=tinysrgb&w=600' },
   { id: '5', title: 'Instagram Reel', category: 'short-form', thumbnail: 'https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?auto=compress&cs=tinysrgb&w=600' },
   { id: '6', title: 'Commercial Ad', category: 'ads', thumbnail: 'https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600' },
@@ -18,7 +18,7 @@ const categories = [
   { id: 'all', label: 'All Projects' },
   { id: 'short-form', label: 'Short-Form' },
   { id: 'ads', label: 'Ads' },
-  { id: 'music-videos', label: 'Music Videos' },
+  { id: 'Event-Coverage', label: 'Event-Coverage' },
   { id: 'cinematic', label: 'Cinematic' },
 ];
 
