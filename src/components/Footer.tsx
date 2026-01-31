@@ -27,7 +27,7 @@ export default function Footer({ navigateTo }: FooterProps) {
               whileHover={{ scale: 1.05 }}
             >
               <img
-                src="/img_20251018_220710_343.jpg"
+                src="/img_20251018_220710_343-removebg-preview.png"
                 alt="Jerry Cinematic Logo"
                 className="w-10 h-10"
               />
