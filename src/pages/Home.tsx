@@ -32,11 +32,7 @@ export default function Home({ navigateTo }: HomeProps) {
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
             }}
-            animate={{
-              opacity: [0, 1, 0],
-              scale: [0, 1.5, 0],
-            }}
-            
+          
           />
         ))}
       </div>
