@@ -41,7 +41,6 @@ export default function Preloader({ onComplete }: PreloaderProps) {
             className="h-full bg-gradient-to-r from-[#007BFF] to-[#C0C0C0]"
             initial={{ width: "0%" }}
             animate={{ width: "100%" }}
-            transition={{ delay: 1.2, duration: 1.2, ease: "easeInOut" }}
           />
         </motion.div>
       </div>
