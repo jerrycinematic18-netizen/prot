@@ -61,7 +61,7 @@ export default function Home({ navigateTo }: HomeProps) {
               transition={{ duration: 2, repeat: Infinity }}
             />
             <motion.img
-              src="/IMG_20251018_220710_343.webp"
+              src="/img_20251018_220710_343.jpg"
               alt="Jerry Cinematic Logo"
               className="w-48 h-48 drop-shadow-2xl relative z-10"
               animate={{

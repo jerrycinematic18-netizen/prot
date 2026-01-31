@@ -29,7 +29,7 @@ export default function Navbar({ currentPage, navigateTo }: NavbarProps) {
           onClick={() => navigateTo('home')}
         >
           <img
-            src="/IMG_20251018_220710_343.webp"
+            src="/img_20251018_220710_343.jpg"
             alt="Jerry Cinematic Logo"
             className="w-12 h-12"
           />
