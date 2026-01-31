@@ -47,7 +47,9 @@ export default function Home({ navigateTo }: HomeProps) {
 
       <div className="relative z-10 text-center px-4">
         <motion.div
-
+          initial={{ scale: 0, rotate: -180 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
           className="mb-8"
         >
           <div className="relative mx-auto w-48 h-48 flex items-center justify-center">
@@ -63,7 +65,6 @@ export default function Home({ navigateTo }: HomeProps) {
               alt="Jerry Cinematic Logo"
               className="w-48 h-48 drop-shadow-2xl relative z-10"
               animate={{
-                rotateY: [0, 360],
               }}
               transition={{ duration: 6, repeat: Infinity, ease: 'linear' }}
             />
