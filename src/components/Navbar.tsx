@@ -10,7 +10,6 @@ export default function Navbar({ currentPage, navigateTo }: NavbarProps) {
   const navItems: { label: string; page: Page }[] = [
     { label: 'Home', page: 'home' },
     { label: 'About', page: 'about' },
-    { label: 'Portfolio', page: 'portfolio' },
     { label: 'Services', page: 'services' },
     { label: 'Contact', page: 'contact' },
   ];
