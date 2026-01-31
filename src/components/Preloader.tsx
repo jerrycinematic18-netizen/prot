@@ -16,6 +16,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       <div className="text-center">
         <motion.div
           animate={{
+            rotate: 360,
             scale: [1, 1.1, 1],
           }}
           transition={{
@@ -35,7 +36,6 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           className="mt-8 h-1 w-64 bg-gray-800 rounded-full overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
         >
           <motion.div
             className="h-full bg-gradient-to-r from-[#007BFF] to-[#C0C0C0]"
