@@ -28,16 +28,26 @@ export default function Home({ navigateTo }: HomeProps) {
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-[#007BFF] rounded-full"
-
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              opacity: [0, 1, 0],
+              scale: [0, 1.5, 0],
+            }}
+            transition={{
+              duration: 3 + Math.random() * 2,
+              repeat: Infinity,
+              delay: Math.random() * 5,
+            }}
           />
         ))}
       </div>
 
       <div className="relative z-10 text-center px-4">
         <motion.div
-          initial={{ scale: 0, rotate: -180 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
+
           className="mb-8"
         >
           <div className="relative mx-auto w-48 h-48 flex items-center justify-center">
